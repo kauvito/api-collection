@@ -9,10 +9,26 @@ fun main() {
     values[3] = 3
     values[4] = 2
 
+    //iteração normal
     for (valor in values){
         println(valor)
     }
 
+    //interação com lambda
+    values.forEach { valor ->
+        println(valor)
+    }
+
+    //iteração ultilizando o indice do array
+    for (index in values.indices){
+        println(values[index])
+    }
+
+    //ordenando o array
+    values.sort()
+    for (valor in values){
+        println(valor)
+    }
 
 
 
